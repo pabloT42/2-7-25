@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+void HiChew();
+int main() {
+	HiChew();
+}
+void HiChew() {
+	srand(time(NULL));
+	int num = rand() % 100 + 1;
+
+	if (num < 25) {
+		cout << "kiwi" << endl;
+	}
+
+	else if (num < 50) {
+		cout << "mango" << endl;
+	}
+
+	else if (num < 75) {
+		cout << "pineapple" << endl;
+	}
+
+	else {
+		cout << "dragonfruit" << endl;
+	}
+
+}
